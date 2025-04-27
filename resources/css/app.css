@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+  --font-sans: "Roboto", sans-serif;
+  --color-deep-ocean: #153642;
+  --color-accent: #cba977;
+  --font-mrs-eaves: "Mrs Eaves", serif;
+}
+
+@layer utilities {
+  .text-outline {
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+  }
+}
